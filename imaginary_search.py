@@ -25,6 +25,7 @@ imaginary_high_sym = []
 
 f = open("search_log.txt", "w+")
 
+# your MP API Key goes in the speech marks - not including here for security reasons. https://materialsproject.org/api
 with MPRester("") as mpr:
 
     experimental_materials = mpr.summary.search(
